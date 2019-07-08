@@ -1,15 +1,11 @@
-package com.devopsbuddy.devopsbuddy.controllers;
+package com.devopsbuddy.web.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class helloworldcontroller {
-
+public class IndexController {
     @RequestMapping("/")
-    public String sayhello()
-    {
-        return "index";
-    }
-
+    public String home()
+    {return "index";}
 }
